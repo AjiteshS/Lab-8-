@@ -1,1 +1,48 @@
-<!-- rewrite this document with the required content -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tim Berners-Lee - The Inventor of the World Wide Web</title>
+</head>
+
+<body>
+    <main>
+        <h1>Tim Berners-Lee: The Father of the World Wide Web</h1>
+        <p>Tim Berners-Lee invented the World Wide Web, revolutionizing how we share and access information globally.</p>
+        
+        <a href="https://en.wikipedia.org/wiki/Tim_Berners-Lee" target="_blank">
+            <img src="Tim.jpg" alt="Tim Berners-Lee" width="300">
+        </a>
+
+        <h2>Key Components of the World Wide Web</h2>
+        <dl>
+            <dt>HTTP (HyperText Transfer Protocol)</dt>
+            <dd>The protocol for transferring data between servers and clients.</dd>
+            
+            <dt>HTML (HyperText Markup Language)</dt>
+            <dd>The language used to create and structure web pages.</dd>
+            
+            <dt>Web Browser</dt>
+            <dd>A software application used to access and display web pages.</dd>
+        </dl>
+    </main>
+
+    <footer>
+        <p>&copy; <x-year></x-year> All Rights Reserved</p>
+    </footer>
+
+    <script>
+        // Define a custom element for the current year
+        class CurrentYear extends HTMLElement {
+            connectedCallback() {
+                this.textContent = new Date().getFullYear();
+            }
+        }
+
+        customElements.define("x-year", CurrentYear);
+    </script>
+</body>
+
+</html>
